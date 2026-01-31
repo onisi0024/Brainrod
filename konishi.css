@@ -1,0 +1,163 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+header{
+  background-color: rgb(10, 200, 238);
+  height: 500px;
+  background-image: url(images/image.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+h1{
+ color: white;
+ padding-top: 100px;
+ text-align: center;
+}
+
+.top_Nav{
+ margin-top: 200px;
+}
+
+.top_Nav ul{
+  margin: 0 auto;
+  color: white;
+  list-style: none;
+  padding-left: 0px;
+}
+
+.top_Nav ul a {
+ display: inline;
+ display: block;
+ margin: 0 auto;
+ margin-bottom: 10px;
+ color: black;
+ text-decoration: none;
+ background-color: white;
+ padding: 10px 15px;
+}
+
+main{
+  width: 95%;
+  margin: 50px auto;
+}
+
+.mk_img {
+  width: 100%;
+}
+
+.creeper_img {
+  display: none;
+}
+
+.flex {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.flex img {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.flex-reverse-mb {
+  flex-direction: column-reverse;
+}
+
+.flex div {
+  width: 260px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 980px){
+  main{
+  width: 980px;
+  margin: 50px auto;
+ }
+ 
+ .creeper_img {
+  display: block;
+  width: 60px;
+  position: absolute;
+  top: 200px;
+  left: calc(50% + 200px);
+  animation: updown 3s ease-in-out infinite alternate;
+  }
+
+  h1{
+ padding-top: 100px;
+ text-align: center;
+ padding-right: 500px;
+}
+
+.top_Nav ul{
+  display: flex;
+  justify-content: space-between;
+  width: 600px;
+  margin: 0 auto;
+  color: white;
+  list-style: none;
+}
+
+.top_Nav ul a {
+ color: black;
+ text-decoration: none;
+ background-color: white;
+ padding: 10px 15px;
+ transition: all 0.8s ease-in-out;
+ border: 1px solid black;
+ border-radius: 10px;
+ box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.8);
+}
+.flex {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex img {
+  width: 300px;
+  margin: 0;
+}
+
+.top_Nav ul a:hover {
+ color: white;
+  background-color: black;
+  box-shadow: none;
+}
+
+.flex div {
+  margin: 0;
+}
+}
+
+section h3 {
+  text-align: center;
+  margin-top: 60px;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+footer {
+background-color: lightgray;
+ padding: 30px;
+ text-align: center;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-30px) scale(0.5);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateY(30px) scale(1.2);
+  }
+}
