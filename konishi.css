@@ -111,7 +111,7 @@ main{
  padding: 10px 15px;
  transition: all 0.8s ease-in-out;
  border: 1px solid black;
- border-radius: 10px;
+ border-radius: 5px;
  box-shadow: 5px 5px 5px  rgba(0, 0, 0, 0.8);
 }
 .flex {
